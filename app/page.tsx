@@ -34,8 +34,7 @@ export default function Page() {
             My research examines the interaction between social and cognitive psychology.
             I am interested in how the interpretation of the same information—about objects,
             people, and events—varies depending on the social context in which it is encountered.
-            More recently, I have become interested in how people interpret information literally
-            versus figuratively or symbolically, and how this affects meaning-making and judgment.
+          
           </p>
 
           <div style={styles.divider} />
