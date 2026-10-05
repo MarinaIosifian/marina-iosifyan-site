@@ -1,0 +1,115 @@
+.page {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #111;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.publicationsPage {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 40px 100px;
+}
+
+.publicationsPage h1 {
+  font-size: 42px;
+  font-weight: 400;
+  margin: 0 0 70px;
+}
+
+.section {
+  margin-bottom: 90px;
+}
+
+.secondSection {
+  margin-top: 100px;
+}
+
+.section h3 {
+  font-size: 25px;
+  line-height: 1.4;
+  font-weight: 400;
+  margin: 0 0 40px;
+}
+
+.papersGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 35px;
+  row-gap: 60px;
+}
+
+.paperCard {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  border: 2px solid #ccc;
+  padding: 20px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.imageContainer {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.clickable:hover .imageContainer img {
+  transform: scale(1.03);
+}
+
+.clickable:hover h2 {
+  text-decoration: underline;
+}
+
+.paperCard h2 {
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+  margin: 0;
+}
+
+.paperNote {
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 10px 0 0;
+}
+
+@media (max-width: 900px) {
+  .papersGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .publicationsPage {
+    padding: 50px 20px 70px;
+  }
+
+  .publicationsPage h1 {
+    font-size: 34px;
+    margin-bottom: 50px;
+  }
+
+  .section h3 {
+    font-size: 21px;
+  }
+
+  .papersGrid {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+
+  .imageContainer {
+    width: 70%;
+  }
+}

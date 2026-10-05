@@ -1,0 +1,75 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 32px 64px;
+  position: relative;
+  z-index: 1000;
+}
+
+.name {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 1.2px;
+  font-weight: 500;
+}
+
+.nameLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.subtitle {
+  margin-top: 6px;
+  font-size: 16px;
+  color: #555;
+}
+
+.nav {
+  display: flex;
+  gap: 22px;
+  align-items: baseline;
+}
+
+.link {
+  text-decoration: none;
+  color: #111;
+  font-size: 18px;
+}
+
+.researchMenu {
+  position: relative;
+}
+
+.researchLabel {
+  color: #111;
+  font-size: 18px;
+}
+
+.researchDropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 330px;
+  padding-top: 15px;
+  display: none;
+  z-index: 1000;
+}
+
+.researchMenu:hover .researchDropdown {
+  display: block;
+}
+
+.researchDropdown a {
+  display: block;
+  padding: 12px 16px;
+  color: #111;
+  background: white;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.researchDropdown a:hover {
+  text-decoration: underline;
+}
